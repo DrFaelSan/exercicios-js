@@ -10,7 +10,7 @@ console.log(aula1, aula2);
 // simulando o new
 function novo(f, ...params) {
   const obj = {};
-  obj.___proto___ = f.prototype;
+  obj.__proto__ = f.prototype;
   f.apply(obj, params);
   return obj;
 }

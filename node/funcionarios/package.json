@@ -1,0 +1,24 @@
+{
+  "name": "funcinarios",
+  "version": "1.0.0",
+  "description": "Curso Web Morderno com JavaScript 2019 Completo + Projetos. ",
+  "main": "funcionarios.Js",
+  "scripts": {
+    "start": "nodemon",
+    "dev": "RafaDev",
+    "test": "echo \"Erro: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "a"
+  },
+  "keywords": [
+    "das"
+  ],
+  "author": "das",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "0.17.1"
+  }
+}
