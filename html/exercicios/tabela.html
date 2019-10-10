@@ -1,0 +1,65 @@
+<table>
+  <caption>
+    Produtos
+  </caption>
+  <thead>
+    <!-- Linha de Cabeçalho da Tabela -->
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Quantidade</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 1ª Linha da Tabela -->
+    <tr>
+      <td>IPad</td>
+      <td>3289,00</td>
+      <td>5</td>
+      <td>16445,00</td>
+    </tr>
+    <tr>
+      <td>Samsung S9</td>
+      <td>2649,00</td>
+      <td>8</td>
+      <td>21192,00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <!-- colspan : deixa com o espaçamento maior na coluna , no caso eu utilizei um espaçamento de 3 colunas-->
+      <!-- rowspan : deixa com o espaçamento maior na linha , no caso eu utilizei um espaçamento de 2 linhas  -->
+      <td colspan="3" /*rowspan="2"*/>Total</td>
+      <td>37637,00</td>
+    </tr>
+    <!-- <tr>
+      <td>teste</td>
+    </tr> -->
+  </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th , td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+
+    tfoot tr:hover {
+        background-color: #444;
+        color: #fff;
+        font-weight: bold;
+    }
+
+</style>
