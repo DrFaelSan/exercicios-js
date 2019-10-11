@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css" />
+    <style>
+      /*
+       =>  seletor : * , seleciona tudo na página.
+  
+            * {
+                color: #ff0;
+                background-color: #771155;
+            }
+    */
+
+      /*
+       =>  seletor : .tag , seleciona "classe" cujo nome é tag.
+  
+            .tag {
+                color: #ff0;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : #aprovados , seleciona "id" cujo nome é aprovados.
+  
+            #aprovados {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : #aninhado > div , seleciona "id" cujo nome é aninhado e seleciono a primeira div desse id,
+       No caso esse sinal de maior (>) significa primeiro objeto  que é um  DIV que eu declarei logo após. Como resultado
+       esse comando influencia no estilo de tudo que está dentro da primeira DIV.
+  
+            #aninhado > div {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : #aninhado section , seleciona "id" cujo nome é aninhado e manipula todas as sactions desse meu bloco aninhado.
+  
+            #aninhado section  {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : p + ul , com esse seletor eu seleciono todos "ul" que vem depois de um "p".
+  
+            p + ul  {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : p ~ ol , com esse seletor eu seleciono a "ol" que vem depois de um "p" e herda o mesmo pai ,
+       Nesse exemplo eu tenho minha div que tem um "p" e também tenho "ol" porém eles não são visinhos.
+  
+            p ~ ol  {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : [feira] , seleciona todos elementos que tem um atributo([]) , cujo nome é feira.
+  
+           [feira]  {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+      /*
+       =>  seletor : section > span:nth-of-type(2) , seleciona o segundo elemento do tipo span dentra da section.
+  
+           section > span:nth-of-type(2)  {
+                color: #f0f;
+                background-color: #f77;
+            }
+    */
+    </style>
+  </head>
+
+  <body>
+    <div class="tag">
+      <div class="tag">
+        <p class="tag">1</p>
+        <ul class="tag" feira="casa">
+          <li>Arroz</li>
+          <li>Feijão</li>
+        </ul>
+        <ul class="tag" feira="escritorio empresa">
+          <li>Café</li>
+          <li>Água</li>
+        </ul>
+        <ol id="aprovados" class="tag">
+          <li>Maria</li>
+          <li>Pedro</li>
+          <li>Ana</li>
+        </ol>
+        <div id="aninhado" class="tag">
+          <div class="tag">
+            <section class="tag">
+              <span class="tag">1</span>
+              <p class="tag">2</p>
+              <span class="tag">3</span>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/tag.js"></script>
+  </body>
+</html>
